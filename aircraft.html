@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirCraft</title>
+    <link rel="stylesheet" href="squarebagel.css">
+</head>
+
+<body>
+
+        <header class="header">
+        <nav class="navbar">
+            <!-- Hamburger icon -->
+            <img src="hamburger.svg" alt="hamburger" class="hamburger" id="openSidebar" style="cursor:pointer;">
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar" style="position: fixed; top: 0; left: -300px; width: 300px; height: 100%; color: #000; transition: left 0.3s ease; padding: 20px; box-sizing: border-box; z-index: 1000;">
+  <div class="sidebar-header">
+    <span class="close-btn" id="closeSidebar" style="cursor:pointer; font-size: 30px;">&times;</span>
+  </div>
+  <ul class="sidebar-menu" style="list-style: none; padding: 0;">
+    <li class="side-menu"><a href="aircraft.html" style="color: black; text-decoration: none;">Freelance 3D Projects</a></li>
+    <li class="side-menu"><a href="#" style="color: black; text-decoration: none;">Sell 3D Models</a></li>
+    <li class="side-menu"><a href="#" style="color: black; text-decoration: none;">Custom 3D Modeling</a></li>
+    <li class="side-menu"><a href="#" style="color: black; text-decoration: none;">For Designers</a></li>
+  </ul>
+</div>
+
+
+
+            <img src="logo.svg" alt="SquareBagel Logo" class="slogo">
+            <input class="searchbar" type="search" placeholder="Search 3D Models, Projects...">
+            <button class="ShareButton">Share your work</button>
+            <div class="nav-btns">
+                <a href="" class="LoginButton">Login</a>
+                <a href="" class="CartButton">Cart</a>
+                <img src="manImg.svg" alt="man" class="man-img">
+
+                <img src="cartImg.svg" alt="Cart" class="cart-img">
+            </div>
+        </nav>
+
+        <input class="mob-searchbar" type="search" placeholder="Search 3D Models, Projects...">
+
+        <customnav class="custom-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="#" class="nav-link" onclick="showSection('freelance-section')">Freelance 3D Projects</a>
+
+
+                    <img src="arrow.svg" alt="Arrow" class="arrow-icon">
+                </li>
+                <li>
+                    <a class="nav-link" href="nav-link">Sell 3D Models</a>
+                    <img src="arrow.svg" alt="Arrow" class="arrow-icon">
+                </li>
+                <li>
+                    <a class="nav-link" href="nav-link">Custom 3D Modeling</a>
+                    <img src="arrow.svg" alt="Arrow" class="arrow-icon">
+                </li>
+                <li>
+                    <a class="nav-link" href="nav-link">For Designers</a>
+                    <img src="arrow.svg" alt="Arrow" class="arrow-icon">
+                </li>
+            </ul>
+        </customnav>
+    </header>
+
+    <section class="aircraft-section content-section" id="freelance-section">
+
+        <nav class="freelance-navbar">
+
+            <a href="squarebagel.html" class="section-p">Home</a>
+            <p><img src="Ellipse.svg"></p>
+            <p class="section-p">Freelance 3D Projects</p>
+            <p><img src="Ellipse.svg"></p>
+            <p class="aircraft-navigation">Aircraft 3D model</p>
+
+        </nav>
+
+        <div class="aircraft-content">
+            <p class="aircraft-mainheading">Aircraft 3D models</p>
+            <p class="counting-text">5,464 3d Items</p>
+            <p class="aircraft-para">24,471 aircraft 3D models are available for download on our marketplace. CG
+                airplanes will fit into simulations, visualizations, advertisements and videos. Drones bodies and parts
+                will delight fans of tiny flying vehicles.</p>
+
+        </div>
+
+        <div class="aircradt-btns-div">
+
+            <div class="aircraft-dropdowns">
+                <p>Formats</p>
+                <img src="arrow.svg" alt="Arrow" class="arrow-icon">
+            </div>
+
+            <div class="aircraft-dropdowns">
+                <p>Poly count</p>
+                <img src="arrow.svg" alt="Arrow" class="arrow-icon">
+            </div>
+
+            <div class="aircraft-dropdowns">
+                <p>License</p>
+                <img src="arrow.svg" alt="Arrow" class="arrow-icon">
+            </div>
+
+            <div class="aircraft-dropdowns">
+                <p>Select attribute</p>
+                <img src="arrow.svg" alt="Arrow" class="arrow-icon">
+            </div>
+
+            <div class="price-slider-container">
+                <div class="price-values">
+                    <span id="min-price">Rs.0</span>
+                    <span id="max-price">Rs.50,000</span>
+                </div>
+                <div class="slider-wrapper">
+                    <input type="range" id="min-range" min="0" max="50000" value="0" step="10">
+                    <input type="range" id="max-range" min="0" max="50000" value="50000" step="10">
+                    <div class="slider-track"></div>
+                </div>
+            </div>
+
+
+            <div class="aircraft-dropdowns">
+                <p>Sort By</p>
+                <img src="arrow.svg" alt="Arrow" class="arrow-icon">
+            </div>
+
+        </div>
+
+        <div class="aircraft-images">
+            <div class="images-btns">
+                <button class="image-btn">Concept</button>
+                <button class="image-btn">Visual</button>
+                <button class="image-btn">Design</button>
+                <button class="image-btn">boeing 737</button>
+                <button class="image-btn">aviation</button>
+                <button class="image-btn">bombardier</button>
+                <button class="image-btn">Spitfire</button>
+            </div>
+
+            <div class="shopping-items">
+
+                <div class="craft-div">
+                    <img src="Mask.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Spitfire MKVB</p>
+                    <p class="model-prices"><span class="first-price">Rs.14,715</span> <span
+                            class="second-price">Rs.16,350</span> <span class="discount">(10% Off)</span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="plane.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Boeing 737 Interior With Galley 3D model</p>
+                    <p class="model-prices"><span class="first-price">Rs.16,850</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="planeNew.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Flight Suit U2 Pilot 3D Model</p>
+                    <p class="model-prices"><span class="first-price">Rs.18,350</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="planeLast.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Flight Suit F35 Pilot 3D Model</p>
+                    <p class="model-prices"><span class="first-price">Rs.14,350</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+
+                <div class="craft-div">
+                    <img src="Mask.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Spitfire MKVB</p>
+                    <p class="model-prices"><span class="first-price">Rs.16,350</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="plane.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Boeing 737 Interior With Galley 3D model</p>
+                    <p class="model-prices"><span class="first-price">Rs.18,150</span> <span
+                            class="second-price">Rs.16,350</span> <span class="discount">(10% Off)</span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="planeNew.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Flight Suit U2 Pilot 3D Model</p>
+                    <p class="model-prices"><span class="first-price">Rs.19,350</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="planeLast.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Spitfire MKVB</p>
+                    <p class="model-prices"><span class="first-price">Rs.16,350</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="Mask.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Boeing 737 Interior With Galley 3D model</p>
+                    <p class="model-prices"><span class="first-price">Rs.18,150</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="plane.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Flight Suit U2 Pilot 3D Model</p>
+                    <p class="model-prices"><span class="first-price">Rs.19,350</span> <span
+                            class="second-price">Rs.16,350</span> <span class="discount">(10% Off)</span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="planeNew.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Flight Suit F35 Pilot 3D Model</p>
+                    <p class="model-prices"><span class="first-price">Rs.16,350</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="planeLast.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Spitfire MKVB</p>
+                    <p class="model-prices"><span class="first-price">Rs.16,350</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="Mask.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Boeing 737 Interior With Galley 3D model</p>
+                    <p class="model-prices"><span class="first-price">Rs.18,150</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="plane.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Flight Suit U2 Pilot 3D Model</p>
+                    <p class="model-prices"><span class="first-price">Rs.19,350</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="planeNew.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Flight Suit F35 Pilot 3D Model</p>
+                    <p class="model-prices"><span class="first-price">Rs.16,350</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="planeLast.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Spitfire MKVB</p>
+                    <p class="model-prices"><span class="first-price">Rs.16,350</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="Mask.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Boeing 737 Interior With Galley 3D model</p>
+                    <p class="model-prices"><span class="first-price">Rs.18,150</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="plane.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Flight Suit U2 Pilot 3D Model</p>
+                    <p class="model-prices"><span class="first-price">Rs.19,350</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="planeNew.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Flight Suit U2 Pilot 3D Model</p>
+                    <p class="model-prices"><span class="first-price">Rs.19,350</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+                <div class="craft-div">
+                    <img src="planeLast.svg" class="image-air">
+                    <p class="model-name">3D Model</p>
+                    <p class="model-brand">Flight Suit F35 Pilot 3D Model</p>
+                    <p class="model-prices"><span class="first-price">Rs.16,350</span> <span
+                            class="second-price"></span> <span class="discount"></span></p>
+                    <p class="extends">max, obj, fbx, 3ds, lwo and more</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+
+            <div class="footer-newsletter">
+                <p class="small-title">Stay up to date</p>
+                <h3>get our<br>newsletter</h3>
+                <div class="newsletter-input">
+                    <input type="email" placeholder="Your email" />
+                    <button><img src="footerArrow.svg" alt="submit" /></button>
+                </div>
+            </div>
+
+
+            <div class="footer-column">
+                <div class="footer-toggle">
+                    <p class="footer-heading">Company</p>
+                    <img src="footerArrowVector.svg" class="footer-vector" alt="Footerarrow">
+                </div>
+                <ul class="footer-list">
+                    <li>Blog</li>
+                    <li>Events</li>
+                    <li>Press</li>
+                    <li>Careers</li>
+                    <li>Help Center</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <div class="footer-toggle">
+                    <p class="footer-heading">Modelry</p>
+                    <img src="footerArrowVector.svg" class="footer-vector" alt="Footerarrow">
+                </div>
+                <ul class="footer-list">
+                    <li>3D Viewer</li>
+                    <li>3D Product </li>
+                    <li>Visualization</li>
+                    <li>3D Digital Asset Management</li>
+                    <li>Custom </li>
+                    <li>3D Modeling</li>
+                    <li>Virtual </li>
+                    <li>Photography</li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <div class="footer-toggle">
+                    <p class="footer-heading">Sell 3D Models</p>
+                    <img src="footerArrowVector.svg" class="footer-vector" alt="Footerarrow">
+                </div>
+                <ul class="footer-list">
+                    <li>Community</li>
+                    <li>3D Designers</li>
+                    <li>Forum</li>
+                    <li>Freelance with us</li>
+                    <li>Loyalty credits</li>
+                    <li>Program</li>
+                </ul>
+            </div>
+
+
+            <div class="footer-contact footer-column">
+                <div class="footer-toggle">
+                    <p class="footer-heading get-in">Get in touch</p>
+                    <img src="footerArrowVector.svg" class="footer-vector toggle-arrow" alt="Footerarrow" />
+                </div>
+
+                <div class="footer-list">
+                    <p>hello@squarbagal.com</p>
+                    <p>+91 8826688426</p>
+                    <p class="social-title">See what we’re up to</p>
+                    <div class="social-icons">
+                        <img src="facebook.svg" alt="Facebook" />
+                        <img src="twitter.svg" alt="Twitter" />
+                        <img src="instagram.svg" alt="Instagram" />
+                        <img src="youtube.svg" alt="YouTube" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <img src="footerLogo.svg" alt="Squarebagel logo" />
+            <p>© Copyright squarebagel 2022</p>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+
+        <img src="footerbagal.svg" alt="right-corner-image" class="footer-corner-img" />
+    </footer>
+    
+ <script src="squarebagel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquareBagel</title>
+    <link rel="stylesheet" href="squarebagel.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <!-- Hamburger icon -->
+           <img src="hamburger.svg" alt="hamburger" class="hamburger" id="openSidebar" style="cursor:pointer;">
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar" style="position: fixed; top: 0; left: -300px; width: 300px; height: 100%; color: #000; transition: left 0.3s ease; padding: 20px; box-sizing: border-box; z-index: 1000;">
+  <div class="sidebar-header">
+    <span class="close-btn" id="closeSidebar" style="cursor:pointer; font-size: 30px;">&times;</span>
+  </div>
+  <ul class="sidebar-menu" style="list-style: none; padding: 0;">
+    <li class="side-menu"><a href="aircraft.html" style="color: black; text-decoration: none;">Freelance 3D Projects</a></li>
+    <li class="side-menu"><a href="#" style="color: black; text-decoration: none;">Sell 3D Models</a></li>
+    <li class="side-menu"><a href="#" style="color: black; text-decoration: none;">Custom 3D Modeling</a></li>
+    <li class="side-menu"><a href="#" style="color: black; text-decoration: none;">For Designers</a></li>
+  </ul>
+</div>
+
+
+
+
+            <img src="logo.svg" alt="SquareBagel Logo" class="slogo">
+            <input class="searchbar" type="search" placeholder="Search 3D Models, Projects...">
+            <button class="ShareButton">Share your work</button>
+            <div class="nav-btns">
+                <a href="" class="LoginButton">Login</a>
+                <a href="" class="CartButton">Cart</a>
+                <img src="manImg.svg" alt="man" class="man-img">
+
+                <img src="cartImg.svg" alt="Cart" class="cart-img">
+            </div>
+        </nav>
+
+        <input class="mob-searchbar" type="search" placeholder="Search 3D Models, Projects...">
+
+        <customnav class="custom-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="aircraft.html" class="nav-link" onclick="showSection('freelance-section')">Freelance 3D Projects</a>
+
+
+                    <img src="arrow.svg" alt="Arrow" class="arrow-icon">
+                </li>
+                <li>
+                    <a class="nav-link" href="nav-link">Sell 3D Models</a>
+                    <img src="arrow.svg" alt="Arrow" class="arrow-icon">
+                </li>
+                <li>
+                    <a class="nav-link" href="nav-link">Custom 3D Modeling</a>
+                    <img src="arrow.svg" alt="Arrow" class="arrow-icon">
+                </li>
+                <li>
+                    <a class="nav-link" href="nav-link">For Designers</a>
+                    <img src="arrow.svg" alt="Arrow" class="arrow-icon">
+                </li>
+            </ul>
+        </customnav>
+    </header>
+
+    <main id="main-section" class="content-section">
+        <HeroSection class="hero-section">
+            <div class="hero-content-cover">
+                <p class="thousands">Search thousands of 3D models</p>
+                <img src="square.svg" class="squareimg">
+                <img src="box.svg" class="boximg">
+
+            </div>
+
+            <div class="hero-content mobile-grid" id="mobileHeroGrid">
+                <img src="hero-slider.svg" alt="Scroll Left" class="hero-slider-img left"
+                    onclick="scrollHeroList('left')">
+
+                <ul class="hero-list" id="heroList">
+                    <li class="hero-item"><img src="aircraft.svg" alt="Aircraft" class="hero-icon">
+                        <p class="hero-para">Aircraft</p>
+                    </li>
+                    <li class="hero-item"><img src="car.svg" alt="Car" class="hero-icon">
+                        <p class="hero-para">Car</p>
+                    </li>
+                    <li class="hero-item"><img src="architectural.svg" alt="Architectural" class="hero-icon">
+                        <p class="hero-para">Architectural</p>
+                    </li>
+                    <li class="hero-item"><img src="exterior.svg" alt="Exterior" class="hero-icon">
+                        <p class="hero-para">Exterior</p>
+                    </li>
+                    <li class="hero-item"><img src="interior.svg" alt="Interior" class="hero-icon">
+                        <p class="hero-para">Interior</p>
+                    </li>
+                    <li class="hero-item"><img src="character.svg" alt="Character" class="hero-icon">
+                        <p class="hero-para">Character</p>
+                    </li>
+                    <li class="hero-item"><img src="food.svg" alt="Food" class="hero-icon">
+                        <p class="hero-para">Food</p>
+                    </li>
+                    <li class="hero-item"><img src="animal.svg" alt="Animal" class="hero-icon">
+                        <p class="hero-para">Animal</p>
+                    </li>
+                    <li class="hero-item"><img src="industrial.svg" alt="Industrial" class="hero-icon">
+                        <p class="hero-para">Industrial</p>
+                    </li>
+                </ul>
+
+                <ul class="hero-list-mob" id="heroListMobile">
+                    <li class="hero-item"><img src="aircraft.svg" alt="Aircraft" class="hero-icon">
+                        <p class="hero-para">Aircraft</p>
+                    </li>
+                    <li class="hero-item"><img src="car.svg" alt="Car" class="hero-icon">
+                        <p class="hero-para">Car</p>
+                    </li>
+                    <li class="hero-item"><img src="architectural.svg" alt="Architectural" class="hero-icon">
+                        <p class="hero-para">Architectural</p>
+                    </li>
+                    <li class="hero-item"><img src="exterior.svg" alt="Exterior" class="hero-icon">
+                        <p class="hero-para">Exterior</p>
+                    </li>
+                    <li class="hero-item"><img src="interior.svg" alt="Interior" class="hero-icon">
+                        <p class="hero-para">Interior</p>
+                    </li>
+                    <li class="hero-item"><img src="character.svg" alt="Character" class="hero-icon">
+                        <p class="hero-para">Character</p>
+                    </li>
+                    <li class="hero-item"><img src="food.svg" alt="Food" class="hero-icon">
+                        <p class="hero-para">Food</p>
+                    </li>
+                    <li class="hero-item"><img src="animal.svg" alt="Animal" class="hero-icon">
+                        <p class="hero-para">Animal</p>
+                    </li>
+                    <li class="hero-item"><img src="industrial.svg" alt="Industrial" class="hero-icon">
+                        <p class="hero-para">Industrial</p>
+                    </li>
+                </ul>
+
+                <button class="view-all-btn" id="viewAllBtn">View All</button>
+
+                <img src="hero-slider.svg" alt="Scroll Right" class="hero-slider-img right"
+                    onclick="scrollHeroList('right')">
+            </div>
+
+            <section class="hero-section-content">
+                <div class="looking-div">
+                    <p class="looking-text">Looking For Custom 3D Modeling at Scale?</p>
+                    <button class="get-start">Get Started here</button>
+                </div>
+
+
+
+
+                <img src="shutterstock.svg" alt="shutterstock" class="shutterstock-img" />
+
+                <p class="shutterstock-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </p>
+
+                <div class="shuttermobile">
+                    <img src="shutterstock.svg" alt="shutterstock" class="shutterstock-img-mob" />
+                    <button class="get-start-mob">Get Started here</button>
+                    <p class="shutterstock-text-mob">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    </p>
+                </div>
+
+
+
+
+            </section>
+
+        </HeroSection>
+
+        <section class="marketplace-section">
+            <div class="marketplace-left">
+                <p class="menu-item">3D Models</p>
+                <p class="menu-item">Low-poly PBR 3D Models</p>
+                <p class="menu-item">3D Printing Models</p>
+                <img src="Vectorsecnd.svg" alt="Vector graphic" class="vector-extra" />
+            </div>
+
+            <div class="marketplace-center">
+                <h2>3D Model Marketplace</h2>
+                <p class="subtitle">Choose from 1 580 000 3D models for applications such as gaming, AR/VR, advertising,
+                    animation, movies and 3D printing</p>
+                <img src="squirrel.svg" alt="3D Squirrel Model" />
+            </div>
+
+            <div class="modelsdiv">
+                <p>3D Models</p>
+                <p>Low-poly PBR 3D Models</p>
+                <p>3D Printing Models</p>
+            </div>
+
+            <div class="marketplace-right">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam,
+                </p>
+                <button class="know-more">Know More</button>
+            </div>
+            <img src="squirrel.svg" alt="3D Squirrel Model" class="squirrel-img" />
+
+            <img src="Frame.svg" alt="Frame" class="frame-img">
+        </section>
+
+        <section class="freelance-section">
+            <img src="jetAircraft.svg" alt="Jet Aircraft" class="jet-aircraft" />
+
+            <div class="freelance-content">
+                <h2 class="freelance-title">Sell your 3D Models<br>and Find Freelance Projects</h2>
+
+                <div class="freelance-grid">
+                    <div class="freelance-item">
+                        <p>Sell your 3D models and earn up to 80% royalties</p>
+                        <a href="#">Sell 3D Models</a>
+                    </div>
+                    <div class="freelance-item">
+                        <p>Outsource your skills & get up to 95% royalties</p>
+                        <a href="#">Browse Jobs</a>
+                    </div>
+                    <div class="freelance-item">
+                        <p>Work with enterprise clients</p>
+                        <a href="#">Get Qualified</a>
+                    </div>
+                    <div class="freelance-item">
+                        <p>Build your portfolio and be visible</p>
+                        <a href="#">Browse Designers</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="community">
+            <img src="communityBackground.svg" class="community-bg" alt="Background">
+
+            <div class="community-content">
+                <h2>Join Squarebagal<br><span class="comm-span">Community</span></h2>
+
+                <div class="community-features">
+                    <div class="feature">
+                        <h3>Galleries</h3>
+                        <p>Showcase your best renders, get feedback and recognition</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Tutorials</h3>
+                        <p>Learn new skills and teach others</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Forum</h3>
+                        <p class="findtutorial">Find tutorials and discuss other 3D related matters</p>
+                    </div>
+                </div>
+
+                <button class="join-btn">Join The Community</button>
+            </div>
+
+            <img src="commImg.svg" class="community-illustration" alt="Illustration">
+        </section>
+    </main>
+
+   
+
+
+    <footer class="footer">
+        <div class="footer-top">
+
+            <div class="footer-newsletter">
+                <p class="small-title">Stay up to date</p>
+                <h3>get our<br>newsletter</h3>
+                <div class="newsletter-input">
+                    <input type="email" placeholder="Your email" />
+                    <button><img src="footerArrow.svg" alt="submit" /></button>
+                </div>
+            </div>
+
+
+            <div class="footer-column">
+                <div class="footer-toggle">
+                    <p class="footer-heading">Company</p>
+                    <img src="footerArrowVector.svg" class="footer-vector" alt="Footerarrow">
+                </div>
+                <ul class="footer-list">
+                    <li>Blog</li>
+                    <li>Events</li>
+                    <li>Press</li>
+                    <li>Careers</li>
+                    <li>Help Center</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <div class="footer-toggle">
+                    <p class="footer-heading">Modelry</p>
+                    <img src="footerArrowVector.svg" class="footer-vector" alt="Footerarrow">
+                </div>
+                <ul class="footer-list">
+                    <li>3D Viewer</li>
+                    <li>3D Product </li>
+                    <li>Visualization</li>
+                    <li>3D Digital Asset Management</li>
+                    <li>Custom </li>
+                    <li>3D Modeling</li>
+                    <li>Virtual </li>
+                    <li>Photography</li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <div class="footer-toggle">
+                    <p class="footer-heading">Sell 3D Models</p>
+                    <img src="footerArrowVector.svg" class="footer-vector" alt="Footerarrow">
+                </div>
+                <ul class="footer-list">
+                    <li>Community</li>
+                    <li>3D Designers</li>
+                    <li>Forum</li>
+                    <li>Freelance with us</li>
+                    <li>Loyalty credits</li>
+                    <li>Program</li>
+                </ul>
+            </div>
+
+
+            <div class="footer-contact footer-column">
+                <div class="footer-toggle">
+                    <p class="footer-heading get-in">Get in touch</p>
+                    <img src="footerArrowVector.svg" class="footer-vector toggle-arrow" alt="Footerarrow" />
+                </div>
+
+                <div class="footer-list">
+                    <p>hello@squarbagal.com</p>
+                    <p>+91 8826688426</p>
+                    <p class="social-title">See what we’re up to</p>
+                    <div class="social-icons">
+                        <img src="facebook.svg" alt="Facebook" />
+                        <img src="twitter.svg" alt="Twitter" />
+                        <img src="instagram.svg" alt="Instagram" />
+                        <img src="youtube.svg" alt="YouTube" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <img src="footerLogo.svg" alt="Squarebagel logo" />
+            <p>© Copyright squarebagel 2022</p>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+
+        <img src="footerbagal.svg" alt="right-corner-image" class="footer-corner-img" />
+    </footer>
+
+
+
+    <script src="squarebagel.js"></script>
+</body>
+
+</html>
